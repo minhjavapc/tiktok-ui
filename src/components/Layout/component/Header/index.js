@@ -13,6 +13,7 @@ import { Warpper as PopperWrapper } from '~/components/Popper';
 import styles from '././Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -59,9 +60,7 @@ function Header() {
         </Tippy>
         <div className={cx('actions')}>
           <Button text>Upload</Button>
-          <Button rounded className={cx('custom-login')}>
-            Log in
-          </Button>
+          <Button primary>Log in</Button>
         </div>
       </div>
     </header>
